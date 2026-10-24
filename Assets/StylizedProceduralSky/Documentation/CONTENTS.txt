@@ -1,0 +1,48 @@
+CONTENTS -- Stylized Procedural Sky (Godot 4)
+Maciej EmacArt
+================================================================
+
+SHADER (1)
+  Shaders/EA_Skybox.gdshader          38 parameters in six inspector groups
+
+  Parameters by type:      23 sliders, 12 colours, 2 toggles, 1 sun direction
+  Inspector groups (6):    Zenith and Horizon, Sun, Sky Gradient,
+                           Atmosphere, Color Grading, Clouds
+  Cloud patterns (5):      Standard, Feathered, Round, Diagonal, Cotton
+
+MATERIALS (2)
+  Materials/EA_Skybox_Default.tres    clear daylight sky
+  Materials/EA_Skybox_WarmDusk.tres   warm low sun, muted blue zenith
+
+SCENES (2)
+  Scenes/SkyboxDemo.tscn              sky, sun, ground and three props
+  Scenes/UI_ParameterPanel.tscn       on-screen sliders for every shader
+                                      parameter, laid out in the scene itself
+
+SCRIPTS (3)
+  Scripts/DemoCamera.gd               orbit camera for the demo
+  Scripts/SkyPresets.gd               runtime preset switch for the demo
+  Scripts/UI_ParameterPanel.gd        makes the sliders work; press H to hide
+                                      the panel for clean screenshots
+
+DOCUMENTATION (4)
+  README.txt                          setup, sun, clouds, performance
+  CONTENTS.txt                        this file
+  LICENSE.txt                         EmacEArt Asset License
+  EmacEArt_Stylized_Skybox_Documentation_EN.pdf
+                                      full manual, every parameter explained
+
+TEXTURES (0)
+  None. The whole sky is drawn by the shader - no images, no cubemaps.
+
+PROJECT FILES (4)
+  project.godot                       demo project settings
+  icon.svg                            project icon shown in the Godot
+                                      project manager
+  README.txt                          same text as in Documentation/, kept at
+                                      the project root
+  LICENSE.txt                         same licence, kept at the project root
+
+================================================================
+Engine: Godot 4.7 or newer, Forward+ (also runs on Mobile)
+================================================================

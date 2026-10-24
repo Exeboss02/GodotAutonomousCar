@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dmip3040v6s70"]
+
+[ext_resource type="Script" uid="uid://b4xglla6wbjd5" path="res://Objects/Player/Player.gd" id="1_8r7yd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5jcaf"]
+
+[node name="Player" type="Node3D" unique_id=723211072 node_paths=PackedStringArray("camera")]
+script = ExtResource("1_8r7yd")
+camera = NodePath("SubViewport/Camera3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=111617416]
+visible = false
+mesh = SubResource("BoxMesh_5jcaf")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=430064797]
+size = Vector2i(640, 480)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport" unique_id=1503578730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0054877, 4.5202584)
