@@ -44,8 +44,9 @@ albedo_color = Color(0.24322304, 0.25890788, 0.2655812, 1)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=937632304]
 environment = SubResource("Environment_mncer")
 
-[node name="Player" parent="." unique_id=723211072 instance=ExtResource("1_mncer")]
+[node name="Player" parent="." unique_id=723211072 node_paths=PackedStringArray("object") instance=ExtResource("1_mncer")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -210.35612, 16.737535, -152.65427)
+object = NodePath("../Signs/Prop_StreetSign_Stop4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=108221774]
 transform = Transform3D(10000, 0, 0, 0, 2.71, 0, 0, 0, 10000, 3.151, 10.096, -185.265)
@@ -1645,12 +1646,6 @@ transform = Transform3D(-0.20478801, 0, -0.14339411, 0, 0.25, 0, 0.14339411, 0, 
 [node name="Prop_StreetSign_Stop2" parent="Signs" unique_id=1791673232 instance=ExtResource("20_asirl")]
 transform = Transform3D(0.20966764, 0, 0.13615976, 0, 0.25, 0, -0.13615976, 0, 0.20966764, -24.45432, 0.18483526, -16.124466)
 
-[node name="Prop_StreetSign_Stop6" parent="Signs" unique_id=207464414 instance=ExtResource("20_asirl")]
-transform = Transform3D(0.14694631, 0, -0.20225427, 0, 0.25, 0, 0.20225427, 0, 0.14694631, -28.12306, 0.18483555, -15.608258)
-
-[node name="Prop_StreetSign_Stop5" parent="Signs" unique_id=924336771 instance=ExtResource("20_asirl")]
-transform = Transform3D(-0.15045378, 0, 0.19965887, 0, 0.25, 0, -0.19965887, 0, -0.15045378, -25.036438, 0.18483526, -19.670595)
-
 [node name="Prop_StreetSign_Stop3" parent="Signs" unique_id=145900963 instance=ExtResource("20_asirl")]
 transform = Transform3D(0.034793276, 0, -0.24756701, 0, 0.25, 0, 0.24756701, 0, 0.034793276, 3.211, 0.086, -69.167)
 
@@ -1665,6 +1660,9 @@ transform = Transform3D(-0.23775019, 0, -0.23363645, 0, 0.33333334, 0, 0.2336364
 
 [node name="Traffic Light by Jarlan Perez - 5eb8E34txWa2" parent="Signs" unique_id=823453544 instance=ExtResource("21_asirl")]
 transform = Transform3D(-0.23570225, 0, -0.23570225, 0, 0.33333334, 0, 0.23570225, 0, -0.23570225, 16.949688, 0.86054003, -3.185646)
+
+[node name="Traffic Light by Jarlan Perez - 5eb8E34txWa10" parent="Signs" unique_id=1946031051 instance=ExtResource("21_asirl")]
+transform = Transform3D(0.20292047, 0, 0.2644511, 0, 0.33333334, 0, -0.2644511, 0, 0.20292047, 11.940718, 0.86054003, -4.418912)
 
 [node name="Traffic Light by Jarlan Perez - 5eb8E34txWa3" parent="Signs" unique_id=574932564 instance=ExtResource("21_asirl")]
 transform = Transform3D(-0.25156984, 0, 0.21868634, 0, 0.33333334, 0, -0.21868634, 0, -0.25156984, 13.92536, 0.86054003, -1.4322395)
@@ -1685,4 +1683,4 @@ transform = Transform3D(-0.29011858, 0, 0.16414122, 0, 0.33333334, 0, -0.1641412
 transform = Transform3D(0.24575917, 0, -0.22519678, 0, 0.33333334, 0, 0.22519678, 0, 0.24575917, -63.80622, 0.86054003, -10.793348)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=454643341]
-transform = Transform3D(-0.6765544, 0.02190274, -0.7360669, 0, 0.99955755, 0.029743288, 0.7363927, 0.02012295, -0.67625505, -996.43805, 16.801546, -199.73486)
+transform = Transform3D(0.08845925, -0.00789936, 0.9960485, 0, 0.9999686, 0.007930448, -0.9960798, -0.0007015215, 0.088456474, 309.59085, 20.317455, -734.2134)
